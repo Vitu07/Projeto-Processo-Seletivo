@@ -2,8 +2,16 @@ package candidatura;
 import java.util.concurrent.ThreadLocalRandom;
 public class ProcessoSeletivo {
     public static void main(String[] args) {
-        selecaoDeCandidatos();
+        imprimirSelecionados();
     }
+    static void imprimirSelecionados(){
+        String [] candidatos = {"João", "Marcelo", "Maria", "Luiza", "Clara"};
+        for (String candidato : candidatos){
+            System.out.println("O candidato selecionado foi " + candidato);
+        }
+    }
+
+
     static void selecaoDeCandidatos() {
         //Array candidatos
         String [] candidatos = {"João", "Marcelo", "Maria", "Luiza", "Clara", "Roberto", "José", "Vera", "lais", "Larissa"};
